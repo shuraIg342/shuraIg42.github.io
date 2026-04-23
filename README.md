@@ -1,0 +1,1 @@
+# shuraIg42.github.io
