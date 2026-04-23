@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Поход на Салаирский кряж</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+    <!-- Хедер с position: sticky -->
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">
+                <span class="logo__icon">🏔️</span>
+                <span class="logo__text">Salair<span class="logo__accent">Explore</span></span>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">О кряже</a></li>
+                    <li><a href="#route" class="nav__link">Маршрут</a></li>
+                    <li><a href="#gallery" class="nav__link">Галерея</a></li>
+                    <li><a href="#signup" class="nav__link nav__link--btn">Записаться</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Поход на Салаирский кряж</h1>
+                <p class="hero__subtitle">Древние горы, таежные тропы и кристальные реки — откройте Алтай заново</p>
+                <a href="#signup" class="btn btn--large">Выбрать тур</a>
+            </div>
+        </section>
+
+        <!-- Секция "О кряже" с Flexbox -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section__title">Сердце <span class="text-highlight">Салаира</span></h2>
+                <div class="about__grid">
+                    <div class="about__text">
+                        <p>Салаирский кряж — это <strong>уникальная горная система</strong> на стыке Алтайского края, Кемеровской и Новосибирской областей. Возраст пород достигает <em>500 миллионов лет</em>.</p>
+                        <p>В отличие от высоких Алтайских гор, Салаир — это царство <strong>пологих вершин, густой тайги и карстовых пещер</strong>. Здесь вы почувствуете настоящую дикую природу без толп туристов.</p>
+                        <ul class="feature-list">
+                            <li>🌲 <span>Реликтовые леса из пихты и осины</span></li>
+                            <li>💧 <span>Река Уксунай с ледяной водой</span></li>
+                            <li>🐻 <span>Шанс увидеть марала или лося, диких животных</span></li>
+                        </ul>
+                    </div>
+                    <div class="about__image">
+                        <img src="png/таёжный лес.png" alt="Таежный лес на склонах Салаирского кряжа">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Маршрут" с Grid -->
+        <section id="route" class="route section section--dark">
+            <div class="container">
+                <h2 class="section__title section__title--light">Ключевые <span class="text-highlight">точки</span></h2>
+                <div class="route__grid">
+                    <div class="route-card">
+                        <div class="route-card__number">01</div>
+                        <h3>Вершина</h3>
+                        <p>Самая высокая точка кряжа (567 м). Отсюда открывается панорама на 50 км.</p>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-card__number">02</div>
+                        <h3>Большое озеро</h3>
+                        <p>Изумрудного цвета, деально для небольшого перерыва по пути.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery section">
+            <div class="container">
+                <h2 class="section__title">Визуальное <span class="text-highlight">путешествие</span></h2>
+                <div class="gallery__grid">
+                    <div class="gallery__item">
+                        <img src="png/Горная река Уксунай.png" alt="Горная река Уксунай">
+                        <div class="gallery__overlay">Река Уксунай</div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="png/Вершина.jpg" alt="Вершина">
+                        <div class="gallery__overlay">Вершина Салаирского кряжа</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="signup" class="form-section section">
+            <div class="container">
+                <div class="form__wrapper">
+                    <h2 class="section__title">Готов в <span class="text-highlight">поход?</span></h2>
+                    <p>Оставьте заявку, и мы подберем удобную дату и расскажем про снаряжение</p>
+                    <form class="signup-form" action="#" method="post">
+                        <div class="form__group">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email">Электронная почта</label>
+                        </div>
+                        <div class="form__group">
+                            <select id="route-select" required>
+                                <option value="" disabled selected>Выберите маршрут</option>
+                                <option>Легкая задержка (3 Дня)</option>
+                                <option>Выживание (5 дней)</option>
+                                <option>Семейный поход</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn--submit">Записаться</button>
+                        <p class="form__privacy">Нажимая на кнопку, вы соглашаетесь с политикой обработки данных</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>© 2026 Поход на Салаирский кряж.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Telegram">✈️ Telegram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
